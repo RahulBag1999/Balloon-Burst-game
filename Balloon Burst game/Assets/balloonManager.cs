@@ -16,7 +16,7 @@ public class balloonManager : MonoBehaviour
         {
             int n = Random.Range(0, balloonsToInstantiate.Length);
             GameObject balloon = Instantiate(balloonsToInstantiate[n], spawnPoint.position, Quaternion.identity);
-            Destroy(balloon, 5f);
+            //Destroy(balloon, 2);
             //balloon.GetComponent<Transform>();
             //balloon.transform.position = Vector3.MoveTowards(balloon.transform.position, targetPoint.position, travelSpeed * Time.deltaTime);
         }
