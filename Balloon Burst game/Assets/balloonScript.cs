@@ -6,6 +6,7 @@ public class balloonScript : MonoBehaviour
 {
     [SerializeField] private Transform targetPoint;
     [SerializeField] private float travelSpeed;
+    [SerializeField] private int scoreCount;
     // [SerializeField] private float rotationSpeed;
     // [SerializeField] private float ySpeed;
     // [SerializeField] private float yMin;
@@ -25,6 +26,11 @@ public class balloonScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if(collision.gameObject.tag=="Pin")
+        {
+            ScoreManager.scoreManager.IncreaseScore(scoreCount);
+            Destroy(gameObject);
+        }
+        
     }
 }
