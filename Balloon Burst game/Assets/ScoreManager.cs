@@ -8,12 +8,10 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager scoreManager;
     [SerializeField] private Text scoreText;
     private int score;
-
     void Start()
     {
         scoreManager = this;
     }
-
     public void IncreaseScore(int increase)
     {
         score += increase;

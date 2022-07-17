@@ -7,11 +7,13 @@ public class balloonScript : MonoBehaviour
     [SerializeField] private Transform targetPoint;
     [SerializeField] private float travelSpeed;
     [SerializeField] private int scoreCount;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite spriteToRender;
+   
     // [SerializeField] private float rotationSpeed;
     // [SerializeField] private float ySpeed;
     // [SerializeField] private float yMin;
     // [SerializeField] private float yMax;
-
 
     void Update()
     {
@@ -28,8 +30,9 @@ public class balloonScript : MonoBehaviour
     {
         if(collision.gameObject.tag=="Pin")
         {
+            spriteRenderer.sprite = spriteToRender;
             ScoreManager.scoreManager.IncreaseScore(scoreCount);
-            Destroy(gameObject);
+            Destroy(gameObject,0.1f);
         }
         
     }

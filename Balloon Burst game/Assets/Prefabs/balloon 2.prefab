@@ -100,6 +100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPoint: {fileID: 2020089882436700191, guid: fe7b31c67435793469b65160f9fc4926, type: 3}
   travelSpeed: 5
+  scoreCount: 15
+  spriteRenderer: {fileID: 4769555718125465919}
+  spriteToRender: {fileID: 21300000, guid: 6bfd73160e1f5bc4f9eb45387cdefaa0, type: 3}
 --- !u!58 &5330216624266814116
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -19,14 +19,9 @@ public class balloonManager : MonoBehaviour
             Spawn();
             spawnTime = Time.time + timeBetweenSpawn;
         }
-        
-            
-            
             //balloon.GetComponent<Transform>();
             //balloon.transform.position = Vector3.MoveTowards(balloon.transform.position, targetPoint.position, travelSpeed * Time.deltaTime);
-        
     }
-
     void Spawn()
     {
         int n = Random.Range(0, balloonsToInstantiate.Length);
