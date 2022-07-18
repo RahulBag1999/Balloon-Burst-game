@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 885757495}
+  scoreCount: {fileID: 568146898}
 --- !u!114 &644621063
 MonoBehaviour:
   m_ObjectHideFlags: 0
