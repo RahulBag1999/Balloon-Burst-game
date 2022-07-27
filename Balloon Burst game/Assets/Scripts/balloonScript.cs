@@ -28,12 +28,11 @@ public class balloonScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag=="Pin")
+        if (collision.gameObject.tag == "Pin")
         {
             spriteRenderer.sprite = spriteToRender;
             ScoreManager.scoreManager.IncreaseScore(scoreCount);
-            Destroy(gameObject,0.1f);
+            Destroy(gameObject, 0.1f);
         }
-        
     }
 }
